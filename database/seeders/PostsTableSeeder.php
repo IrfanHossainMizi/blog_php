@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         // reset the post table 
-        DB:: table('posts')->truncate();
+        \DB:: table('posts')->truncate();
         // generate 10 dummy posts data
 
         $posts = [];
@@ -40,6 +40,6 @@ class PostsTableSeeder extends Seeder
             ];
         }
 
-        DB::table('posts')->insert($posts);
+        \DB::table('posts')->insert($posts);
     }
 }

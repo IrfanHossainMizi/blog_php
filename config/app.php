@@ -27,6 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
+    'DB' => Illuminate\Support\Facades\DB::class,
 
     /*
     |--------------------------------------------------------------------------

@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [
     'uses' => 'App\Http\Controllers\BlogController@index',
+    'as' => 'blog'
 ]);
-Route::get('/blog/show', function () {
-    return view('blog.show');
-});
+Route::get('/blog/{post}', [
+    'uses' => 'App\Http\Controllers\BlogController@show',
+    'as' => 'blog.show'
+
+]);

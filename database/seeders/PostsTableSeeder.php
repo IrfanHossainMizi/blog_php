@@ -24,7 +24,7 @@ class PostsTableSeeder extends Seeder
         
 
         {   
-            $image = "Post_Image" .rand(1,5) . ".jpg";
+            $image = "Post_Image_" .rand(1,5) . ".jpg";
             $date = date("Y-m-d H:i:s", strtotime("2016-07-18 08:00:00 + {$i} days"));
             $posts[] = [
                 'author_id' => rand(1,3),
